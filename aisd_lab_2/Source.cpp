@@ -81,6 +81,10 @@ int main()
 
     cout << "Ââåäèòå êîë-âî óëèòîê: ";
     cin >> snail_amount;
+    if(snail_amount == 1){
+        cout << "Улитка в замешательстве: ";
+    }
+    else{
     Snail* snails = new Snail[snail_amount];
 
     for (int i = 0; i < snail_amount; i++){
@@ -115,6 +119,7 @@ int main()
     }
     if (k != snail_amount) {
         cout << "êðàò÷àéøåå âðåìÿ = " << shortest_path / 2 << endl << endl;
+    }
     }
     system("pause");
     return 0;

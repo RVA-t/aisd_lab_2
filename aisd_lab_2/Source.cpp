@@ -79,10 +79,10 @@ int main()
 {
     setlocale(0, "RUS");
 
-    cout << "Ââåäèòå êîë-âî óëèòîê: ";
+    cout << "Введите количество улиток: ";
     cin >> snail_amount;
     if(snail_amount == 1){
-        cout << "Улитка в замешательстве: ";
+        cout << "Улитка в замешательстве";
     }
     else{
     Snail* snails = new Snail[snail_amount];
@@ -113,12 +113,12 @@ int main()
     int k = 0;
     for (int i = 0; i < snail_amount; i++){
         if (snails[i].confusion){
-            cout << "Óëèòêà " << i << " â çàìåøàòåëüñòâå\n";
+            cout << "Улитка " << i << " в замешательстве\n";
             k++;
         }
     }
     if (k != snail_amount) {
-        cout << "êðàò÷àéøåå âðåìÿ = " << shortest_path / 2 << endl << endl;
+        cout << "Кратчайший путь = " << shortest_path / 2 << endl << endl;
     }
     }
     system("pause");
